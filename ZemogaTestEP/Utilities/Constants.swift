@@ -17,6 +17,7 @@ let POST_USERS_LINK = "https://jsonplaceholder.typicode.com/users"
 //IDENTIFIERS:
 let GO_TO_POSTS = "goToPosts"
 let GO_TO_POST_DETAILS = "goToPostDetails"
+let POST_DETAILS_VIEW = "postDetailsView"
 
 //POSTS:
 let POSTS_TABLEVIEW_CELL = "PostsTableViewCell"
@@ -29,3 +30,8 @@ let COMMENTS_ENTITY = "CommentsEntity"
 let ADDRESS_ENTITY = "AddressEntity"
 let GEO_ENTITY = "GeoEntity"
 let COMPANY_ENTITY = "CompanyEntity"
+
+//ATRIBUTES:
+let kISREADED = "isReaded"
+let kISFAVORITE = "isFavorite"
+let kMAIN = "Main"

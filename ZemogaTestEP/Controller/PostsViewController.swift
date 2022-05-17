@@ -263,11 +263,11 @@ extension PostsViewController: UITableViewDelegate,  UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
 
         let post = postsArray[indexPath.row]
-        post.setValue(true, forKey: "isReaded")
+        post.setValue(true, forKey: kISREADED)
         savePosts()
         
         //Show PostDetailsViewController
-        let postDetailsVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "postDetailsView") as! PostDetailsViewController
+        let postDetailsVC = UIStoryboard.init(name: kMAIN, bundle: nil).instantiateViewController(identifier: POST_DETAILS_VIEW) as! PostDetailsViewController
         postDetailsVC.userIdReceived = post.userId
         postDetailsVC.postBodyReceived = post.body
         postDetailsVC.postIdReceived = post.postId

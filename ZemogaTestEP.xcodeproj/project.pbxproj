@@ -80,9 +80,9 @@
 		D376E28928277DAA004D335A /* ZemogaTestEP */ = {
 			isa = PBXGroup;
 			children = (
-				D3F5828F2834173300607E0D /* Model */,
+				D392C06B2834479900C468F1 /* Model */,
 				D3F5828E283416C800607E0D /* View */,
-				D3F582902834177F00607E0D /* Controller */,
+				D392C06A2834475800C468F1 /* Controller */,
 				D3F5827828338D5C00607E0D /* Utilities */,
 				D376E29628277DB5004D335A /* Assets.xcassets */,
 				D376E29B28277DB5004D335A /* Info.plist */,
@@ -90,13 +90,36 @@
 			path = ZemogaTestEP;
 			sourceTree = "<group>";
 		};
-		D376E2AD28278173004D335A /* Cells */ = {
+		D392C06A2834475800C468F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D37A6868282CF66C0085362D /* GetDataViewController.swift */,
+				D376E28E28277DAA004D335A /* PostsViewController.swift */,
+				D376E2B4282786F5004D335A /* PostDetailsViewController.swift */,
+				D376E28A28277DAA004D335A /* AppDelegate.swift */,
+				D376E28C28277DAA004D335A /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D392C06B2834479900C468F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D376E29328277DAA004D335A /* ZemogaTestEP.xcdatamodeld */,
+				D376E2BA2827CE7A004D335A /* Post.swift */,
+				D376E2C4282AFD5A004D335A /* PostUser.swift */,
+				D37A6871282DCB2C0085362D /* Comments.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D392C06D2834486800C468F1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				D376E2AE282781BE004D335A /* PostsTableViewCell.swift */,
 				D376E2B1282781F3004D335A /* PostDetailsTableViewCell.swift */,
 			);
-			name = Cells;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		D3F5827828338D5C00607E0D /* Utilities */ = {
@@ -112,35 +135,12 @@
 		D3F5828E283416C800607E0D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D376E2AD28278173004D335A /* Cells */,
+				D392C06D2834486800C468F1 /* Cells */,
 				D376E29028277DAA004D335A /* Main.storyboard */,
 				D376E29828277DB5004D335A /* LaunchScreen.storyboard */,
 				D37A6865282CE01B0085362D /* CircleView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		D3F5828F2834173300607E0D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D376E2BA2827CE7A004D335A /* Post.swift */,
-				D376E2C4282AFD5A004D335A /* PostUser.swift */,
-				D37A6871282DCB2C0085362D /* Comments.swift */,
-				D376E29328277DAA004D335A /* ZemogaTestEP.xcdatamodeld */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		D3F582902834177F00607E0D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D37A6868282CF66C0085362D /* GetDataViewController.swift */,
-				D376E28E28277DAA004D335A /* PostsViewController.swift */,
-				D376E2B4282786F5004D335A /* PostDetailsViewController.swift */,
-				D376E28A28277DAA004D335A /* AppDelegate.swift */,
-				D376E28C28277DAA004D335A /* SceneDelegate.swift */,
-			);
-			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
