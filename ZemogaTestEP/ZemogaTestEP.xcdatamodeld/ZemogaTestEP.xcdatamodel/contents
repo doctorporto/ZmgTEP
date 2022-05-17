@@ -1,4 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H1824" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AddressEntity" representedClassName=".AddressEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="city" attributeType="String"/>
+        <attribute name="street" attributeType="String"/>
+        <attribute name="suite" attributeType="String"/>
+        <attribute name="zipcode" attributeType="String"/>
+        <relationship name="geo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GeoEntity" inverseName="address" inverseEntity="GeoEntity"/>
+        <relationship name="postUser" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PostUserEntity" inverseName="address" inverseEntity="PostUserEntity"/>
+    </entity>
+    <entity name="CommentsEntity" representedClassName=".CommentsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="commentBody" optional="YES" attributeType="String"/>
+        <attribute name="commentId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="email" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="postId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CompanyEntity" representedClassName=".CompanyEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="business" optional="YES" attributeType="String"/>
+        <attribute name="catchPhrase" attributeType="String"/>
+        <attribute name="companyName" optional="YES" attributeType="String"/>
+        <relationship name="postUser" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PostUserEntity" inverseName="company" inverseEntity="PostUserEntity"/>
+    </entity>
+    <entity name="GeoEntity" representedClassName=".GeoEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="lat" optional="YES" attributeType="String"/>
+        <attribute name="lng" optional="YES" attributeType="String"/>
+        <relationship name="address" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AddressEntity" inverseName="geo" inverseEntity="AddressEntity"/>
+    </entity>
+    <entity name="PostEntity" representedClassName=".PostEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="body" attributeType="String"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isReaded" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="postId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="userId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="PostUserEntity" representedClassName=".PostUserEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="email" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="phone" attributeType="String"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="username" attributeType="String"/>
+        <attribute name="website" attributeType="String"/>
+        <relationship name="address" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AddressEntity" inverseName="postUser" inverseEntity="AddressEntity"/>
+        <relationship name="company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CompanyEntity" inverseName="postUser" inverseEntity="CompanyEntity"/>
+    </entity>
+    <elements>
+        <element name="AddressEntity" positionX="-543.47265625" positionY="-45.9296875" width="128" height="133"/>
+        <element name="CommentsEntity" positionX="-19.4609375" positionY="-83.9296875" width="128" height="118"/>
+        <element name="CompanyEntity" positionX="-207.4765625" positionY="-48.89453125" width="128" height="103"/>
+        <element name="GeoEntity" positionX="-524.9140625" positionY="206.84765625" width="128" height="88"/>
+        <element name="PostEntity" positionX="-19.2890625" positionY="-244.82421875" width="128" height="133"/>
+        <element name="PostUserEntity" positionX="-372.09375" positionY="-252.45703125" width="128" height="163"/>
+    </elements>
 </model>

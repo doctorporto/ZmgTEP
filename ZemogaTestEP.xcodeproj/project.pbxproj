@@ -9,23 +9,45 @@
 /* Begin PBXBuildFile section */
 		D376E28B28277DAA004D335A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376E28A28277DAA004D335A /* AppDelegate.swift */; };
 		D376E28D28277DAA004D335A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376E28C28277DAA004D335A /* SceneDelegate.swift */; };
-		D376E28F28277DAA004D335A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376E28E28277DAA004D335A /* ViewController.swift */; };
+		D376E28F28277DAA004D335A /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376E28E28277DAA004D335A /* PostsViewController.swift */; };
 		D376E29228277DAA004D335A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D376E29028277DAA004D335A /* Main.storyboard */; };
 		D376E29528277DAA004D335A /* ZemogaTestEP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D376E29328277DAA004D335A /* ZemogaTestEP.xcdatamodeld */; };
 		D376E29728277DB5004D335A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D376E29628277DB5004D335A /* Assets.xcassets */; };
 		D376E29A28277DB5004D335A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D376E29828277DB5004D335A /* LaunchScreen.storyboard */; };
+		D376E2A8282780BF004D335A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376E2A7282780BF004D335A /* Constants.swift */; };
+		D376E2AB28278126004D335A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376E2AA28278126004D335A /* APIManager.swift */; };
+		D376E2AF282781BE004D335A /* PostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376E2AE282781BE004D335A /* PostsTableViewCell.swift */; };
+		D376E2B2282781F3004D335A /* PostDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376E2B1282781F3004D335A /* PostDetailsTableViewCell.swift */; };
+		D376E2B5282786F5004D335A /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376E2B4282786F5004D335A /* PostDetailsViewController.swift */; };
+		D376E2BB2827CE7A004D335A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376E2BA2827CE7A004D335A /* Post.swift */; };
+		D376E2BF282AE9C4004D335A /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376E2BE282AE9C4004D335A /* CoreData.swift */; };
+		D376E2C5282AFD5A004D335A /* PostUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376E2C4282AFD5A004D335A /* PostUser.swift */; };
+		D37A6866282CE01B0085362D /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A6865282CE01B0085362D /* CircleView.swift */; };
+		D37A6869282CF66C0085362D /* GetDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A6868282CF66C0085362D /* GetDataViewController.swift */; };
+		D37A6872282DCB2C0085362D /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A6871282DCB2C0085362D /* Comments.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D376E28728277DAA004D335A /* ZemogaTestEP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZemogaTestEP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D376E28A28277DAA004D335A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D376E28C28277DAA004D335A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D376E28E28277DAA004D335A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D376E28E28277DAA004D335A /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		D376E29128277DAA004D335A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D376E29428277DAA004D335A /* ZemogaTestEP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZemogaTestEP.xcdatamodel; sourceTree = "<group>"; };
 		D376E29628277DB5004D335A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D376E29928277DB5004D335A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D376E29B28277DB5004D335A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D376E2A7282780BF004D335A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D376E2AA28278126004D335A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		D376E2AE282781BE004D335A /* PostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewCell.swift; sourceTree = "<group>"; };
+		D376E2B1282781F3004D335A /* PostDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		D376E2B4282786F5004D335A /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
+		D376E2BA2827CE7A004D335A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D376E2BE282AE9C4004D335A /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		D376E2C4282AFD5A004D335A /* PostUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUser.swift; sourceTree = "<group>"; };
+		D37A6865282CE01B0085362D /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		D37A6868282CF66C0085362D /* GetDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDataViewController.swift; sourceTree = "<group>"; };
+		D37A6871282DCB2C0085362D /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +80,67 @@
 		D376E28928277DAA004D335A /* ZemogaTestEP */ = {
 			isa = PBXGroup;
 			children = (
-				D376E28A28277DAA004D335A /* AppDelegate.swift */,
-				D376E28C28277DAA004D335A /* SceneDelegate.swift */,
-				D376E28E28277DAA004D335A /* ViewController.swift */,
-				D376E29028277DAA004D335A /* Main.storyboard */,
+				D3F5827828338D5C00607E0D /* Utilities */,
+				D376E2A428277EAD004D335A /* Model */,
+				D376E2A328277EA3004D335A /* View */,
+				D376E2A228277E84004D335A /* Controller */,
 				D376E29628277DB5004D335A /* Assets.xcassets */,
-				D376E29828277DB5004D335A /* LaunchScreen.storyboard */,
 				D376E29B28277DB5004D335A /* Info.plist */,
-				D376E29328277DAA004D335A /* ZemogaTestEP.xcdatamodeld */,
 			);
 			path = ZemogaTestEP;
+			sourceTree = "<group>";
+		};
+		D376E2A228277E84004D335A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D376E28A28277DAA004D335A /* AppDelegate.swift */,
+				D376E28C28277DAA004D335A /* SceneDelegate.swift */,
+				D37A6868282CF66C0085362D /* GetDataViewController.swift */,
+				D376E28E28277DAA004D335A /* PostsViewController.swift */,
+				D376E2B4282786F5004D335A /* PostDetailsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D376E2A328277EA3004D335A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D376E2AD28278173004D335A /* Cells */,
+				D376E29028277DAA004D335A /* Main.storyboard */,
+				D376E29828277DB5004D335A /* LaunchScreen.storyboard */,
+				D37A6865282CE01B0085362D /* CircleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D376E2A428277EAD004D335A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D376E2BA2827CE7A004D335A /* Post.swift */,
+				D376E2C4282AFD5A004D335A /* PostUser.swift */,
+				D37A6871282DCB2C0085362D /* Comments.swift */,
+				D376E29328277DAA004D335A /* ZemogaTestEP.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D376E2AD28278173004D335A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D376E2AE282781BE004D335A /* PostsTableViewCell.swift */,
+				D376E2B1282781F3004D335A /* PostDetailsTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		D3F5827828338D5C00607E0D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D376E2A7282780BF004D335A /* Constants.swift */,
+				D376E2AA28278126004D335A /* APIManager.swift */,
+				D376E2BE282AE9C4004D335A /* CoreData.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +213,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D376E28F28277DAA004D335A /* ViewController.swift in Sources */,
+				D376E2C5282AFD5A004D335A /* PostUser.swift in Sources */,
+				D376E2B2282781F3004D335A /* PostDetailsTableViewCell.swift in Sources */,
+				D376E2A8282780BF004D335A /* Constants.swift in Sources */,
+				D376E28F28277DAA004D335A /* PostsViewController.swift in Sources */,
+				D376E2B5282786F5004D335A /* PostDetailsViewController.swift in Sources */,
+				D376E2BF282AE9C4004D335A /* CoreData.swift in Sources */,
+				D37A6866282CE01B0085362D /* CircleView.swift in Sources */,
+				D376E2BB2827CE7A004D335A /* Post.swift in Sources */,
 				D376E29528277DAA004D335A /* ZemogaTestEP.xcdatamodeld in Sources */,
+				D376E2AB28278126004D335A /* APIManager.swift in Sources */,
+				D37A6872282DCB2C0085362D /* Comments.swift in Sources */,
 				D376E28B28277DAA004D335A /* AppDelegate.swift in Sources */,
+				D376E2AF282781BE004D335A /* PostsTableViewCell.swift in Sources */,
 				D376E28D28277DAA004D335A /* SceneDelegate.swift in Sources */,
+				D37A6869282CF66C0085362D /* GetDataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.EmilioPortocarrero.ZemogaTestEP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +403,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.EmilioPortocarrero.ZemogaTestEP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
