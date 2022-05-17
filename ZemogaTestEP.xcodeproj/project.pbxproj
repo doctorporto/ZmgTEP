@@ -117,17 +117,16 @@
 				D376E29828277DB5004D335A /* LaunchScreen.storyboard */,
 				D37A6865282CE01B0085362D /* CircleView.swift */,
 			);
-			name = View;
-			path = View2;
+			path = View;
 			sourceTree = "<group>";
 		};
 		D3F5828F2834173300607E0D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D376E29328277DAA004D335A /* ZemogaTestEP.xcdatamodeld */,
 				D376E2BA2827CE7A004D335A /* Post.swift */,
 				D376E2C4282AFD5A004D335A /* PostUser.swift */,
 				D37A6871282DCB2C0085362D /* Comments.swift */,
+				D376E29328277DAA004D335A /* ZemogaTestEP.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";

@@ -21,7 +21,7 @@ class APIManager {
         dataTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 completion(.failure(error))
-                print("DataTAsk error: \(error.localizedDescription)")
+                print("DataTask error: \(error.localizedDescription)")
                 return
             }
             guard let response = response as? HTTPURLResponse else {
@@ -29,7 +29,7 @@ class APIManager {
                 print("Empty Response")
                 return
             }
-            print("Response Status Code: \(response.statusCode)")
+            print("Posts Response Status Code: \(response.statusCode)")
             guard let data = data else {
                 //Handle empty data
                 print("Empty Data")
@@ -58,7 +58,7 @@ class APIManager {
         postUserDataTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 completion(.failure(error))
-                print("DataTAsk error: \(error.localizedDescription)")
+                print("DataTask error: \(error.localizedDescription)")
                 return
             }
             guard let response = response as? HTTPURLResponse else {
@@ -66,7 +66,7 @@ class APIManager {
                 print("Empty Response")
                 return
             }
-            print("Response Status Code: \(response.statusCode)")
+            print("Post Users Response Status Code: \(response.statusCode)")
             guard let data = data else {
                 //Handle empty data
                 print("Empty Data")
@@ -95,7 +95,7 @@ class APIManager {
         commentsDataTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 completion(.failure(error))
-                print("DataTAsk error: \(error.localizedDescription)")
+                print("DataTask error: \(error.localizedDescription)")
                 return
             }
             guard let response = response as? HTTPURLResponse else {
@@ -103,7 +103,7 @@ class APIManager {
                 print("Empty Response")
                 return
             }
-            print("Response Status Code: \(response.statusCode)")
+            print("Comments Response Status Code: \(response.statusCode)")
             guard let data = data else {
                 //Handle empty data
                 print("Empty Data")
