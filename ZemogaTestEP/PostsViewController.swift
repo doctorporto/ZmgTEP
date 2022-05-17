@@ -41,6 +41,7 @@ class PostsViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         loadInitialSegmentedControl()
+        //print("Registros en postsArray: \(postsArray.count)")
         }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -51,6 +52,7 @@ class PostsViewController: UIViewController {
     //MARK: - Initial data load related to Segmented Control
     private func loadInitialSegmentedControl() {
         if postsSegmentedControl.selectedSegmentIndex == 0 {
+            //print("Entroooo")
             setupTypeOfPosts(selectedTypeOfPosts: 0)
         } else if postsSegmentedControl.selectedSegmentIndex == 1 {
             setupTypeOfPosts(selectedTypeOfPosts: 1)
@@ -134,7 +136,7 @@ class PostsViewController: UIViewController {
             loadInitialSegmentedControl()
             postsTableView.reloadData()
         } else if registers != 0 {
-            showAlertWith(title: "Alert", message: "You can reload all data from JSONPlaceHolder if you press Delete All files button")
+            showAlertWith(title: "Alert", message: "You can reload all data from JSONPlaceHolder if you press Delete All files button.")
         }
     }
     

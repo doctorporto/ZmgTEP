@@ -19,17 +19,10 @@ class GetDataViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
-    private func executeJSONDownloads(handleComplete:(()->())) {
-        getJSONDataAndSaveToCoreData()
-        getJSONDPostUserDataAndSaveToCoreData()
-        getJSONDCommentsDataAndSaveToCoreData()
-        handleComplete()
-    }
-    
-     private func checkDataStored() {
+    private func checkDataStored() {
         let registers = CoreData.sharedInstance.checkRegistersInCoreData()
         if registers == 0 {
             executeJSONDownloads() { () -> () in
@@ -38,6 +31,13 @@ class GetDataViewController: UIViewController {
         } else if registers != 0 {
             goToPostsView()
         }
+    }
+    
+    private func executeJSONDownloads(handleComplete:(()->())) {
+        getJSONDataAndSaveToCoreData()
+        getJSONDPostUserDataAndSaveToCoreData()
+        getJSONDCommentsDataAndSaveToCoreData()
+        handleComplete()
     }
     
     private func goToPostsView() {
@@ -56,8 +56,8 @@ class GetDataViewController: UIViewController {
             case .failure(let error):
                 //Show alert in case of error:
                 DispatchQueue.main.async {
-                self.showAlertWith(title: "Wrong Connection", message: "Please check your internet connection and try again.")
-                print("Error processing JSON data: \(error)")
+                    self.showAlertWith(title: "Wrong Connection", message: "Please check your internet connection and try again.")
+                    print("Error processing JSON data: \(error)")
                 }
             }
         }
@@ -74,8 +74,8 @@ class GetDataViewController: UIViewController {
             case .failure(let error):
                 //Show alert in case of error:
                 DispatchQueue.main.async {
-                self.showAlertWith(title: "Wrong Connection", message: "Please check your internet connection and try again.")
-                print("Error processing JSON data: \(error)")
+                    self.showAlertWith(title: "Wrong Connection", message: "Please check your internet connection and try again.")
+                    print("Error processing JSON data: \(error)")
                 }
             }
         }
@@ -92,8 +92,8 @@ class GetDataViewController: UIViewController {
             case .failure(let error):
                 //Show alert in case of error:
                 DispatchQueue.main.async {
-                self.showAlertWith(title: "Wrong Connection", message: "Please check your internet connection and try again.")
-                print("Error processing JSON data: \(error)")
+                    self.showAlertWith(title: "Wrong Connection", message: "Please check your internet connection and try again.")
+                    print("Error processing JSON data: \(error)")
                 }
             }
         }
