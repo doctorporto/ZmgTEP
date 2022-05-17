@@ -8,7 +8,6 @@
 import UIKit
 import CoreData
 
-
 class PostsViewController: UIViewController {
 
     @IBOutlet weak var postsSegmentedControl: UISegmentedControl!
@@ -152,9 +151,9 @@ class PostsViewController: UIViewController {
         //Get posts from JSONPlaceholder:
         apiManager.getPostsData {(result) in
             switch result {
-            case .success(let listOf):
+            case .success(let postList):
                 //Save JSON to Core Data
-                CoreData.sharedInstance.saveDataOf(posts: listOf.self)
+                CoreData.sharedInstance.saveDataOf(posts: postList.self)
             case .failure(let error):
                 //Show alert in case of error:
                 DispatchQueue.main.async {
@@ -170,9 +169,9 @@ class PostsViewController: UIViewController {
         //Get posts from JSONPlaceholder:
         apiManager.getPostUserData {(result) in
             switch result {
-            case .success(let listOf):
+            case .success(let postUserList):
                 //Save JSON to Core Data
-                CoreData.sharedInstance.savePostUserDataOf(postUser: listOf.self)
+                CoreData.sharedInstance.savePostUserDataOf(postUser: postUserList.self)
             case .failure(let error):
                 //Show alert in case of error:
                 DispatchQueue.main.async {
@@ -188,9 +187,9 @@ class PostsViewController: UIViewController {
         //Get posts from JSONPlaceholder:
         apiManager.getCommentsData {(result) in
             switch result {
-            case .success(let listOf):
+            case .success(let commentList):
                 //Save JSON to Core Data
-                CoreData.sharedInstance.saveCommentsDataOf(comment: listOf.self)
+                CoreData.sharedInstance.saveCommentsDataOf(comment: commentList.self)
             case .failure(let error):
                 //Show alert in case of error:
                 DispatchQueue.main.async {
